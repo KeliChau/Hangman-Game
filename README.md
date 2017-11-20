@@ -1,3 +1,3 @@
 # Hangman-Game
-Hangman Game (Challenge) Homework Week 2
-Using JavaScript, jQuery, HTML, and CSS to build a simple hangman game with a theme.
+Hangman Game Homework Week 2
+Using Vanilla JavaScript and/or jQuery, HTML, and CSS to build a simple hangman game with a Minecraft theme.
