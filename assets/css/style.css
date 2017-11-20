@@ -8,7 +8,9 @@
 }
 
 .title{
-	font-size: 500%;
-	font-family: "Times New Roman", Arial, Sans-Serif;
+	font-size: 800%;
+	font-family: "VT323", monotype, arial, sans-serif;
 	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
 }
