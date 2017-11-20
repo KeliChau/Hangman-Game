@@ -5,9 +5,16 @@ var usedAlphabet = [];
 //Create an array of words for players to guess
 var words = ["creeper", "enderman", "diamond sword"];
 //Make it so that it'll pick a random word
+var chosenWord = words[Math.floor(Math.random() * words.length)];
 //Use onkeyup so that players can press any key to start the game
 document.onekeyup = function(event){
-
+  for (i = 0; i < chosenWord.length; i++) {
+    if (chosenWord.charAt(i) == " ") {
+      dashes += " ";
+    } else {
+      dashes += "-";
+    }
+  }
 }
 //Create an answer array
 //Remaining letters 
