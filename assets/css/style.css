@@ -20,3 +20,21 @@
 .logo{
 	text-align: center;
 }
+
+
+#right{
+	color: #000;
+}
+
+#remain{
+	color: #000;
+}
+
+#wrong{
+	color: #000;
+}
+
+.game{
+	font-size: 300%;
+	color: #000;
+}

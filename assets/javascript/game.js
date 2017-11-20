@@ -1,24 +1,24 @@
-//Create an array of the alphabet
-var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-//Create an array for alphabet the player already used
-var usedAlphabet = [];
-//Create an array of words for players to guess
-var words = ["creeper", "enderman", "diamond sword"];
-//Make it so that it'll pick a random word
-var chosenWord = words[Math.floor(Math.random() * words.length)];
-//Use onkeyup so that players can press any key to start the game
-document.onekeyup = function(event){
-  for (i = 0; i < chosenWord.length; i++) {
-    if (chosenWord.charAt(i) == " ") {
-      dashes += " ";
-    } else {
-      dashes += "-";
-    }
-  }
-}
-//Create an answer array
-//Remaining letters 
-//Letters players have already guessed
-//Update with answer 
-//Alert player that they passed or to play again
+//Array of the alphabet
+var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
+//Array of words for the game
+var words = ["creeper", "enderman", "biome"];
+
+//Array for randomizing the words for players to guess
+var word = words[Math.floor(Math.random()*words.length];
+
+//Array for player's guesses
+var playerGuess = [];
+
+//Loop
+for (var i = 0; i < word.length; i++){
+  playerGuess[i] = "_";
+}
+
+//Remaining letters that the player hasn't used yet
+var remainingAlphabet = word.length;
+
+
+
+
+//Add a case string converter by using the toLowerCase method so players can type in capital or lowercase letters
