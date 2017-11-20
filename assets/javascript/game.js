@@ -8,7 +8,8 @@ for(var i = 0; i < alphabet.length; i++){
   }
 }
 
-var userScore = 0;
+var wins = 0;
+var guessRemaining = 12;
 
 document.onkeyup = function(event)
 {
@@ -16,3 +17,8 @@ document.onkeyup = function(event)
   var userGuess = event.key;
 };
 
+for( var i = 0; i< word.length; i++)
+  {
+    console.log ("The loop ran")
+    $(."word-one").append("<span>___</span>");
+  }
