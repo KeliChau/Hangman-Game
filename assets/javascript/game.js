@@ -1,50 +1,42 @@
-      var words = ['creeper', 'enderman', 'biome', 'steve', 'alex', 'diamond', 'ore', 'bunny', 'villager'];
-      var game = {
-        guessed: [],
-        left: 12,
-        start: function() {
-          this.complete = false;
-          this.word = words[Math.floor(Math.random() * words.length)];
-          this.$right = document.getElementById('right');
-          this.$wrong = document.getElementById('wrong');
-          this.$remain = document.getElementById('remain');
-          this.$right.innerHTML = '_'.repeat(this.word.length);
-        },
-        guess: function(letter) {
-          if (this.left > 0 && this.complete != true) {
-            if (this.word.indexOf(letter) > -1 || this.guessed.indexOf(letter) > -1) {
-              this.right(letter);
-            } else {
-              this.wrong(letter);
-            }
-          }
-        },
-        right: function(letter) {
-          for(var i = 0; i < this.word.length; i++) {
-            if (this.word[i] == letter) {
-              var word = this.$right.innerHTML.split('');
-              word[i] = letter;
-              this.$right.innerHTML = word.join('');
-            }
-          }
-          if (this.$right.innerHTML.indexOf('_') < 0) {
-            alert('Good job! You get yourself a piece of cake!');
-            this.complete = true;
-          }
-        },
-        wrong: function(letter) {
-          this.guessed.push(letter);
-          this.$wrong.innerHTML += ' ' + letter;
-          this.left--;
-          this.$remain.innerHTML = this.left;
-          if (this.left < 1) {
-            alert('You got blown up by a creeper! ' + 'The answer was:'+ this.word);
-            this.complete = true;
-          }
-        }
-      };
-      game.start();
-      document.onkeyup = function(event) {
-        var letter = String.fromCharCode(event.keyCode).toLowerCase();
-        game.guess(letter);
-      };
+$(document).ready(function(){
+
+  //Make it so that it'll pick a random word
+//Create an array of the alphabet
+var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+console.log(alphabet.length);
+
+//Create an array for alphabet the player already used
+var usedAlphabet = [];
+console.log(usedAlphabet.length);
+
+//Array of words for the game
+var words = ["creeper", "enderman", "biome", "diamond", "zombie pigman"];
+console.log(words.length);
+//Loop
+for (var i = 0; i < words.length; i++){
+  console.log(words[i]);
+  playerGuess[i] = "_";
+}
+
+//Array for randomizing the words for players to guess
+var word = words[Math.floor(Math.random() * words.length];
+
+//Array for player's guesses
+var playerGuess = [];
+console.log(playerGuess.length);
+
+
+//Remaining letters that the player hasn't used yet
+var remainingAlphabet = word.length;
+
+//Hint section for players, connected to the according words in the array
+
+//Add letters that the players have already guessed
+
+//Update player with answer
+
+//Alert the player that they won or to play again 
+
+//Add a case string converter by using the toLowerCase method so players can type in capital or lowercase letters
+
+//Reset button for players to refresh the game
