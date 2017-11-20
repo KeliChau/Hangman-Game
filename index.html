@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Hangman Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootsrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
@@ -24,14 +24,18 @@
       Press any key to get started!
     </div>
   </div>
-  <div class="col-md-12 game">
-    What's the word?
-    <p id="correctGuesses"></p>
-    <p><span id="remainingGuesses">15</span> Guesses Remaining</p>
-    <p id="incorrectGuesses">Incorrect Guesses</p>
+  <div class="rows game">
+    <h2>Guess the word:</h2>
+    <div id="right"></div>
+    <div>
+      <span id="remain">12</span> guesses remaining
+    </div>
+    <div id="wrong">Incorrect Letters:</div>
   </div>
-
+  <div class="container">
+    <button id="hint">Hint</button>
+    <button id="reset">Reset</button>
+  </div>
   <script type="text/javascript" src="assets/javascript/game.js"></script>
-
 </body>
 </html>
