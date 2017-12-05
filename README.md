@@ -1,3 +1,6 @@
 # Hangman-Game
-## Hangman Game Homework Week 2
-Using Vanilla JavaScript and/or jQuery, HTML, and CSS to build a simple hangman game with a Minecraft theme.
+## Hangman Game 
+A Minecraft-theme hangman game using jQuery and Vanilla JavaScript.
+## Acknowledgements
+## Future Plans
+In the future I plan to add a Minecraft zombie or skeleton that will show each body part whenever a player misses a letter.
