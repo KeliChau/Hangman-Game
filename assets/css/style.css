@@ -4,26 +4,19 @@
 }
 
 .title{
-	font-size: 800%;
+	font-size: 600%;
 	font-family: "VT323", monotype, "courier new", arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 }
 
-.instructions{
-	font-size: 300%;
-	font-family: "Times New Roman", Georgia, Arial, Serif;
-	text-align: center;
-}
-
 .logo{
 	text-align: center;
 }
 
-
 .game{
-	font-size: 200%;
+	font-size: 150%;
 	color: #fff;
 	text-align: center;
 }
@@ -32,3 +25,18 @@
 	color: #000;
 	text-align: center;
 }
+
+.hint-box{
+	border: #fff solid 3px;
+	width: 30%;
+	height: 200px;
+	margin-left: 35%;
+}
+
+.content{
+	font-family: "VT323", monotype, "courier new", arial, sans-serif;
+	font-size: 150%;
+	text-transform: uppercase;
+	text-align: center;
+}
+

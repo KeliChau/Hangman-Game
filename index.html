@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Hangman Game</title>
@@ -7,35 +9,51 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
+
 <body id="body">
-  <div class="rows">
+
+  <div class="row">
     <div class="col-md-12 logo">
-      <img src="assets/images/Minecraft_Logo.png" width="1000px" height="200px">
+      <img src="assets/images/Minecraft_Logo.png" width="800px" height="200px">
     </div>
   </div>
-  <div class="rows">
+
+  <div class="row">
     <div class="col-md-12 title">
       Hangman Game
     </div>
   </div>
-  <div class="rows">
-    <div class="col-md-12 instructions">
-      Press any key to get started!
-    </div>
-  </div>
+
+  <br/>
+
+  <div class="content">Press any key to start</div>
+
   <div class="game">
-    <h2>Guess the word:</h2>
     <div id="right"></div>
     <div>
-      <span id="remain">12</span> guesses remaining
+      You Have <span id="remain">12</span> Guesses Remaining
     </div>
+    <br/>
     <div id="wrong">Incorrect Letters:</div>
   </div>
+
+  <br/>
+
   <div class="container">
     <button id="hint">Hint</button>
     <button id="reset">Reset</button>
+
+    <br/><br/>
+
+    <div class="row">
+      <div class="col-md-5 hint-box">
+      </div>
+    </div>
   </div>
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
+
 </html>
