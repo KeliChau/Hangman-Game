@@ -18,3 +18,5 @@ This application is an assignment for [GA Tech's Coding Boot Camp](https://codin
 
 ## Future Plans
 + Add a Minecraft Zombie or Skeleton picture that will show each body part whenever a player guesses the wrong letter.
++ Add hints for each word
++ Show correct word if player guesses incorrectly for all letters
